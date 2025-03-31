@@ -9,8 +9,9 @@ public class DatabaseService
 
     public DatabaseService(string dbName)
     {
-        string dbPath = GetDatabasePath(dbName);
-        _connection = new SQLiteConnection(dbPath, SQLiteOpenFlags.ReadWrite | SQLiteOpenFlags.Create);
+        string dbPath = Path.Combine(Application.streamingAssetsPath, dbName);
+_connection = new SQLiteConnection(dbPath, SQLiteOpenFlags.ReadWrite);
+
         Debug.Log("Veritabanına bağlanıldı: " + dbPath);
     }
 
@@ -63,10 +64,12 @@ public class DatabaseService
     }
 
     public List<Kural> GetGuncelKurallar()
-    {
-        string bugun = System.DateTime.Now.ToString("yyyy-MM-dd");
-        return _connection.Table<Kural>().Where(k => k.tarih == bugun).ToList();
-    }
+{
+    var liste = _connection.Table<Kural>().ToList();
+    Debug.Log("[DatabaseService] Veritabanından çekilen kural sayısı: " + liste.Count);
+    return liste;
+}
+
 
 
 }

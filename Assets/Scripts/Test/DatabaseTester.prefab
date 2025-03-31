@@ -9,15 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2129635325508702848}
-  - component: {fileID: 6995846398520945047}
-  - component: {fileID: 3248990724922538281}
-  - component: {fileID: 7288219779900734884}
-  - component: {fileID: 1402990728907663351}
-  - component: {fileID: 6549422295330105872}
-  - component: {fileID: -2121322858216869222}
   - component: {fileID: 3150415496139971080}
-  - component: {fileID: -6019663905846255908}
-  - component: {fileID: 5156551867131485158}
+  - component: {fileID: 6084391259754479714}
   m_Layer: 0
   m_Name: DatabaseTester
   m_TagString: Untagged
@@ -40,78 +33,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6995846398520945047
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1017582568090784231}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 74a77d79dd30f2c3b891c52c86b4b420, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &3248990724922538281
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1017582568090784231}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa4a10fc2cf62ebb9be9d13a834dd58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &7288219779900734884
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1017582568090784231}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f9d9933dd9af444039f3b38924596e6c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1402990728907663351
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1017582568090784231}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de037da92c63e4f11b68bf10626057ea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &6549422295330105872
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1017582568090784231}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c298d7b6320d49a8dbddd9deda31881d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &-2121322858216869222
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1017582568090784231}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 34133ffce55cbe3388a4b7c3790c6031, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &3150415496139971080
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -128,6 +49,8 @@ MonoBehaviour:
   yasText: {fileID: 0}
   meslekText: {fileID: 0}
   olumTarihiText: {fileID: 0}
+  cennetButton: {fileID: 0}
+  cehennemButton: {fileID: 0}
   eylemTextList:
   - {fileID: 0}
   - {fileID: 0}
@@ -137,7 +60,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   geriBildirimText: {fileID: 0}
---- !u!114 &-6019663905846255908
+--- !u!114 &6084391259754479714
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -146,20 +69,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 1017582568090784231}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 316e9c7853be23012b24260b6434032d, type: 3}
+  m_Script: {fileID: 11500000, guid: ac70340275b3108e1ba0348b4d730a4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &5156551867131485158
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1017582568090784231}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a29f7ec610168fd78a1241c63176efb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cennetButton: {fileID: 0}
-  cehennemButton: {fileID: 0}
+  uiController: {fileID: 0}
+  oyuncuID: 1

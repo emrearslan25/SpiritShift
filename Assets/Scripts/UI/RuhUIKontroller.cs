@@ -1,6 +1,9 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
+
 using System.Collections.Generic;
+
 
 public class RuhUIController : MonoBehaviour
 {
@@ -10,6 +13,9 @@ public class RuhUIController : MonoBehaviour
     public TMP_Text yasText;
     public TMP_Text meslekText;
     public TMP_Text olumTarihiText;
+    public Button cennetButton;
+    public Button cehennemButton;
+
 
     [Header("Eylem Paneli")]
     public List<TMP_Text> eylemTextList; // 7 adet text
@@ -46,4 +52,11 @@ public class RuhUIController : MonoBehaviour
         geriBildirimText.text = dogruMu ? "✅ Doğru karar!" : "❌ Yanlış karar!";
         geriBildirimText.color = dogruMu ? Color.green : Color.red;
     }
+
+    public void AktifButonlariAyarla(bool aktif)
+    {
+    cennetButton.interactable = aktif;
+    cehennemButton.interactable = aktif;
+    }
+
 }

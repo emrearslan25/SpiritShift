@@ -485,17 +485,36 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1157241225 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1017582568090784231, guid: d9e529fcb25c0f42f91ca53d9be99cb4, type: 3}
+  m_PrefabInstance: {fileID: 7784382550575102464}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1157241235 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3150415496139971080, guid: d9e529fcb25c0f42f91ca53d9be99cb4, type: 3}
   m_PrefabInstance: {fileID: 7784382550575102464}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1157241225}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7f700394733f70489981ee05494ef4ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1157241237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1157241225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac70340275b3108e1ba0348b4d730a4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uiController: {fileID: 1157241235}
+  oyuncuID: 1
 --- !u!114 &1343164736 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6120802781087508378, guid: 455b70e02e90111879f86457ba71c7d2, type: 3}
@@ -631,6 +650,34 @@ PrefabInstance:
     - target: {fileID: 1506572980109104212, guid: 455b70e02e90111879f86457ba71c7d2, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3841322632482674729, guid: 455b70e02e90111879f86457ba71c7d2, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3841322632482674729, guid: 455b70e02e90111879f86457ba71c7d2, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3841322632482674729, guid: 455b70e02e90111879f86457ba71c7d2, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1157241237}
+    - target: {fileID: 3841322632482674729, guid: 455b70e02e90111879f86457ba71c7d2, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3841322632482674729, guid: 455b70e02e90111879f86457ba71c7d2, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: CehennemButonTiklandi
+      objectReference: {fileID: 0}
+    - target: {fileID: 3841322632482674729, guid: 455b70e02e90111879f86457ba71c7d2, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: RuhYoneticisi, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3841322632482674729, guid: 455b70e02e90111879f86457ba71c7d2, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 3867466901112291311, guid: 455b70e02e90111879f86457ba71c7d2, type: 3}
       propertyPath: m_AnchorMax.y
@@ -876,6 +923,34 @@ PrefabInstance:
       propertyPath: m_fontSizeBase
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 8930158415778057345, guid: 455b70e02e90111879f86457ba71c7d2, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8930158415778057345, guid: 455b70e02e90111879f86457ba71c7d2, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8930158415778057345, guid: 455b70e02e90111879f86457ba71c7d2, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1157241237}
+    - target: {fileID: 8930158415778057345, guid: 455b70e02e90111879f86457ba71c7d2, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8930158415778057345, guid: 455b70e02e90111879f86457ba71c7d2, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: CennetButonTiklandi
+      objectReference: {fileID: 0}
+    - target: {fileID: 8930158415778057345, guid: 455b70e02e90111879f86457ba71c7d2, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: RuhYoneticisi, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8930158415778057345, guid: 455b70e02e90111879f86457ba71c7d2, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -889,14 +964,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: -6019663905846255908, guid: d9e529fcb25c0f42f91ca53d9be99cb4, type: 3}
-      propertyPath: uiController
-      value: 
-      objectReference: {fileID: 1157241235}
-    - target: {fileID: -2121322858216869222, guid: d9e529fcb25c0f42f91ca53d9be99cb4, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1017582568090784231, guid: d9e529fcb25c0f42f91ca53d9be99cb4, type: 3}
       propertyPath: m_Name
       value: DatabaseTester
@@ -954,6 +1021,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 609057496}
     - target: {fileID: 3150415496139971080, guid: d9e529fcb25c0f42f91ca53d9be99cb4, type: 3}
+      propertyPath: cennetButton
+      value: 
+      objectReference: {fileID: 507171245}
+    - target: {fileID: 3150415496139971080, guid: d9e529fcb25c0f42f91ca53d9be99cb4, type: 3}
+      propertyPath: cehennemButton
+      value: 
+      objectReference: {fileID: 2112879874}
+    - target: {fileID: 3150415496139971080, guid: d9e529fcb25c0f42f91ca53d9be99cb4, type: 3}
       propertyPath: olumTarihiText
       value: 
       objectReference: {fileID: 1796728607}
@@ -993,18 +1068,15 @@ PrefabInstance:
       propertyPath: 'eylemTextList.Array.data[6]'
       value: 
       objectReference: {fileID: 1841899720}
-    - target: {fileID: 5156551867131485158, guid: d9e529fcb25c0f42f91ca53d9be99cb4, type: 3}
-      propertyPath: cennetButton
-      value: 
-      objectReference: {fileID: 507171245}
-    - target: {fileID: 5156551867131485158, guid: d9e529fcb25c0f42f91ca53d9be99cb4, type: 3}
-      propertyPath: cehennemButton
-      value: 
-      objectReference: {fileID: 2112879874}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
+    - {fileID: 6084391259754479714, guid: d9e529fcb25c0f42f91ca53d9be99cb4, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1017582568090784231, guid: d9e529fcb25c0f42f91ca53d9be99cb4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1157241237}
   m_SourcePrefab: {fileID: 100100000, guid: d9e529fcb25c0f42f91ca53d9be99cb4, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

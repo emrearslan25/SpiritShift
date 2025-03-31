@@ -4,7 +4,7 @@ using UnityEngine;
 
 public static class Evaluator
 {
-    private static List<Kural> guncelKurallar;
+    private static List<Kural> guncelKurallar = new List<Kural>();
 
     /// <summary>
     /// Güncel kural listesini veritabanından çeker.
@@ -13,7 +13,7 @@ public static class Evaluator
     public static void KurallariYukle(DatabaseService db)
     {
         guncelKurallar = db.GetGuncelKurallar();
-        Debug.Log($"[Evaluator] {guncelKurallar.Count} kural yüklendi.");
+    Debug.Log($"[Evaluator] KurallariYukle çağrıldı. Toplam: {guncelKurallar.Count} kural.");
     }
 
     /// <summary>
@@ -22,16 +22,24 @@ public static class Evaluator
     /// </summary>
     public static bool EylemPozitifMi(string eylemAciklama)
     {
+        if (guncelKurallar == null || guncelKurallar.Count == 0)
+        {
+            Debug.LogWarning("[Evaluator] Kurallar yüklenmemiş. Varsayılan olarak tüm eylemler negatif sayılır.");
+            return false;
+        }
+
+        string eylem = eylemAciklama.ToLower();
+
         foreach (var kural in guncelKurallar)
         {
-            if (eylemAciklama.ToLower().Contains(kural.kriter.ToLower()))
+            string kriter = kural.kriter.ToLower();
+            if (eylem.Contains(kriter))
             {
                 Debug.Log($"[Evaluator] Eylem eşleşti: '{eylemAciklama}' → Kriter: '{kural.kriter}' → Pozitif mi? {kural.pozitif}");
                 return kural.pozitif;
             }
         }
 
-        // Hiçbir kural eşleşmediyse gri alan, varsayılan olarak olumsuz kabul edebilirsin
         Debug.Log($"[Evaluator] Eylemde eşleşme bulunamadı: '{eylemAciklama}' → Varsayılan: false");
         return false;
     }
