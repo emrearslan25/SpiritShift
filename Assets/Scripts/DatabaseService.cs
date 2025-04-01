@@ -70,6 +70,12 @@ _connection = new SQLiteConnection(dbPath, SQLiteOpenFlags.ReadWrite);
     return liste;
 }
 
+public List<Kural> GetTumKurallar()
+{
+    return _connection.Table<Kural>().ToList();
+}
+
+
 
 
 }

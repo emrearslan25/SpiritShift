@@ -4,22 +4,15 @@ using UnityEngine;
 
 public static class Evaluator
 {
-    private static List<Kural> guncelKurallar = new List<Kural>();
+    private static List<Kural> guncelKurallar;
+    private static Queue<bool> sonBesKarar = new Queue<bool>(); // 5'lik pencere
 
-    /// <summary>
-    /// Güncel kural listesini veritabanından çeker.
-    /// Bu metod oyunun başında bir kere çağrılmalı.
-    /// </summary>
     public static void KurallariYukle(DatabaseService db)
     {
         guncelKurallar = db.GetGuncelKurallar();
-    Debug.Log($"[Evaluator] KurallariYukle çağrıldı. Toplam: {guncelKurallar.Count} kural.");
+        Debug.Log($"[Evaluator] {guncelKurallar.Count} kural yüklendi.");
     }
 
-    /// <summary>
-    /// Verilen eylem açıklamasına göre bu eylem pozitif mi?
-    /// Kurallar tabanlı otomatik analiz yapar.
-    /// </summary>
     public static bool EylemPozitifMi(string eylemAciklama)
     {
         if (guncelKurallar == null || guncelKurallar.Count == 0)
@@ -28,12 +21,9 @@ public static class Evaluator
             return false;
         }
 
-        string eylem = eylemAciklama.ToLower();
-
         foreach (var kural in guncelKurallar)
         {
-            string kriter = kural.kriter.ToLower();
-            if (eylem.Contains(kriter))
+            if (eylemAciklama.ToLower().Contains(kural.kriter.ToLower()))
             {
                 Debug.Log($"[Evaluator] Eylem eşleşti: '{eylemAciklama}' → Kriter: '{kural.kriter}' → Pozitif mi? {kural.pozitif}");
                 return kural.pozitif;
@@ -44,12 +34,32 @@ public static class Evaluator
         return false;
     }
 
-    /// <summary>
-    /// Oyuncunun kararı ile sistemin değerlendirmesini karşılaştırır.
-    /// </summary>
     public static bool KararDogruMu(string eylemAciklama, bool oyuncuPozitifMi)
     {
         bool sistemPozitifMi = EylemPozitifMi(eylemAciklama);
         return sistemPozitifMi == oyuncuPozitifMi;
     }
-}
+
+    public static void SonKarariEkle(bool dogruMu)
+    {
+        if (sonBesKarar.Count >= 5)
+            sonBesKarar.Dequeue();
+
+        sonBesKarar.Enqueue(dogruMu);
+    }
+
+    public static bool OyuncuBasarisizMi()
+    {
+        if (sonBesKarar.Count < 5)
+            return false; // henüz yeterli veri yok
+
+        int dogruSayisi = 0;
+        foreach (var karar in sonBesKarar)
+        {
+            if (karar) dogruSayisi++;
+        }
+
+        float oran = dogruSayisi / 5f;
+        return oran < 0.4f; // %40 altıysa başarısız say
+    }
+} 

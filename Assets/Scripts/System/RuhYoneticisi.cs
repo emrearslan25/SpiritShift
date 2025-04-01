@@ -1,10 +1,12 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class RuhYoneticisi : MonoBehaviour
 {
-    public static RuhYoneticisi Instance;
+    public static RuhYoneticisi Instance { get; private set; } // Singleton eklendi
+
     public RuhUIController uiController;
     public DatabaseService db;
     public int oyuncuID = 1;
@@ -12,29 +14,25 @@ public class RuhYoneticisi : MonoBehaviour
     private Ruh aktifRuh;
     private Zamanlayici zamanlayici;
     private KararVerici kararVerici;
-
-    void Awake()
-    {
-        Instance = this;
-    }
+    private int ruhSayaci = 0;
+    private int artArdaYanlisSayaci = 0;
 
     void Start()
-{
-    db = new DatabaseService("spiritshift.db");
-    Evaluator.KurallariYukle(db);
+    {
+        Instance = this; // Singleton ataması
 
-    zamanlayici = new Zamanlayici();
-    kararVerici = new KararVerici(db, oyuncuID);
+        db = new DatabaseService("spiritshift.db");
+        Evaluator.KurallariYukle(db);
 
-    uiController.PerformansiGoster();
+        zamanlayici = new Zamanlayici();
+        kararVerici = new KararVerici(db, oyuncuID);
 
-    YeniRuhYukle();
-}
-
+        YeniRuhYukle();
+    }
 
     public void YeniRuhYukle()
     {
-        aktifRuh = RuhUretici.Uret();
+        aktifRuh = RuhUretici.Uret("kolay", 5); // zorluk ve eylem sayısı parametreli
 
         uiController.RuhBilgileriniGoster(
             aktifRuh.ad,
@@ -52,7 +50,6 @@ public class RuhYoneticisi : MonoBehaviour
     {
         float sure = zamanlayici.BitirVeSüreyiAl();
 
-        // Tüm eylemleri değerlendir
         int pozitifSayisi = 0;
         foreach (var eylem in aktifRuh.eylemler)
         {
@@ -60,7 +57,7 @@ public class RuhYoneticisi : MonoBehaviour
                 pozitifSayisi++;
         }
 
-        bool sistemCennetDiyor = pozitifSayisi >= 4; // 7 eylemden en az 4 iyi ise cennet
+        bool sistemCennetDiyor = pozitifSayisi >= 3; // 5 eylem → 3 iyiyse cennet
         bool oyuncuDogruKararMi = (oyuncuCennetDedi == sistemCennetDiyor);
 
         // Performans kaydı
@@ -75,13 +72,30 @@ public class RuhYoneticisi : MonoBehaviour
 
         db.PerformansKaydet(performans);
 
+        // Performans analizi
+        if (!oyuncuDogruKararMi)
+        {
+            artArdaYanlisSayaci++;
+            if (artArdaYanlisSayaci >= 2)
+            {
+                Debug.LogError("[OYUN] Art arda 2 yanlış karar verildi. OYUN BİTTİ.");
+                // Buraya oyun bitişi UI/sahne geçişi vs. eklenebilir
+                return;
+            }
+        }
+        else
+        {
+            artArdaYanlisSayaci = 0;
+        }
+
         // UI geri bildirim
         uiController.GeriBildirimVer(oyuncuDogruKararMi);
         uiController.AktifButonlariAyarla(false);
-
-        // 2 saniye sonra yeni ruh
-        StartCoroutine(BekleVeYenile());
         uiController.PerformansiGoster();
+
+        // Sonraki ruh
+        ruhSayaci++;
+        StartCoroutine(BekleVeYenile());
     }
 
     private IEnumerator BekleVeYenile()
@@ -91,13 +105,12 @@ public class RuhYoneticisi : MonoBehaviour
     }
 
     public void CennetButonTiklandi()
-{
-    KararVerildi(true); // Oyuncu Cennet dedi
-}
+    {
+        KararVerildi(true);
+    }
 
-public void CehennemButonTiklandi()
-{
-    KararVerildi(false); // Oyuncu Cehennem dedi
-}
-
+    public void CehennemButonTiklandi()
+    {
+        KararVerildi(false);
+    }
 }
