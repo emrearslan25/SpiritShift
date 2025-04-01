@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class RuhYoneticisi : MonoBehaviour
 {
+    public static RuhYoneticisi Instance;
     public RuhUIController uiController;
     public DatabaseService db;
     public int oyuncuID = 1;
@@ -12,6 +13,11 @@ public class RuhYoneticisi : MonoBehaviour
     private Zamanlayici zamanlayici;
     private KararVerici kararVerici;
 
+    void Awake()
+    {
+        Instance = this;
+    }
+
     void Start()
 {
     db = new DatabaseService("spiritshift.db");
@@ -19,6 +25,8 @@ public class RuhYoneticisi : MonoBehaviour
 
     zamanlayici = new Zamanlayici();
     kararVerici = new KararVerici(db, oyuncuID);
+
+    uiController.PerformansiGoster();
 
     YeniRuhYukle();
 }
@@ -73,6 +81,7 @@ public class RuhYoneticisi : MonoBehaviour
 
         // 2 saniye sonra yeni ruh
         StartCoroutine(BekleVeYenile());
+        uiController.PerformansiGoster();
     }
 
     private IEnumerator BekleVeYenile()

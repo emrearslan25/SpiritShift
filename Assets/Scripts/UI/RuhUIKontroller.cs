@@ -1,13 +1,11 @@
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-
 using System.Collections.Generic;
-
+using System.Linq;
 
 public class RuhUIController : MonoBehaviour
 {
-    // UI Referansları (Inspector üzerinden bağlanacak)
     [Header("Ruh Paneli")]
     public TMP_Text adText;
     public TMP_Text yasText;
@@ -16,16 +14,19 @@ public class RuhUIController : MonoBehaviour
     public Button cennetButton;
     public Button cehennemButton;
 
-
     [Header("Eylem Paneli")]
     public List<TMP_Text> eylemTextList; // 7 adet text
 
     [Header("Karar Paneli")]
     public TMP_Text geriBildirimText;
 
-    /// <summary>
-    /// UI'yı verilen ruh bilgileriyle doldurur
-    /// </summary>
+    [Header("Performans Paneli")]
+    public TMP_Text toplamText;
+    public TMP_Text dogruText;
+    public TMP_Text yanlisText;
+    public TMP_Text ortSureText;
+    public TMP_Text oranText;
+
     public void RuhBilgileriniGoster(string ad, int yas, string meslek, string olumTarihi, List<string> eylemler)
     {
         adText.text = "Ad: " + ad;
@@ -38,15 +39,12 @@ public class RuhUIController : MonoBehaviour
             if (i < eylemler.Count)
                 eylemTextList[i].text = eylemler[i];
             else
-                eylemTextList[i].text = ""; // fazladan varsa temizle
+                eylemTextList[i].text = "";
         }
 
-        geriBildirimText.text = ""; // önceki karar mesajını sıfırla
+        geriBildirimText.text = "";
     }
 
-    /// <summary>
-    /// Karar sonrası geri bildirim verir
-    /// </summary>
     public void GeriBildirimVer(bool dogruMu)
     {
         geriBildirimText.text = dogruMu ? "✅ Doğru karar!" : "❌ Yanlış karar!";
@@ -55,8 +53,26 @@ public class RuhUIController : MonoBehaviour
 
     public void AktifButonlariAyarla(bool aktif)
     {
-    cennetButton.interactable = aktif;
-    cehennemButton.interactable = aktif;
+        cennetButton.interactable = aktif;
+        cehennemButton.interactable = aktif;
     }
 
+    public void PerformansiGoster()
+    {
+        var db = RuhYoneticisi.Instance.db;
+        var oyuncuID = RuhYoneticisi.Instance.oyuncuID;
+        List<Performans> kayitlar = db.GetPerformanslar().Where(p => p.oyuncu_id == oyuncuID).ToList();
+
+        int toplam = kayitlar.Count;
+        int dogru = kayitlar.Count(p => p.dogruluk);
+        int yanlis = toplam - dogru;
+        double ortSure = toplam > 0 ? kayitlar.Average(p => p.sure) : 0;
+        double oran = toplam > 0 ? (double)dogru / toplam * 100f : 0;
+
+        toplamText.text = "Toplam Ruh: " + toplam;
+        dogruText.text = "Doğru: " + dogru;
+        yanlisText.text = "Yanlış: " + yanlis;
+        ortSureText.text = $"Ortalama Süre: {ortSure:F2} sn";
+        oranText.text = $"Doğruluk: %{oran:F1}";
+    }
 }
