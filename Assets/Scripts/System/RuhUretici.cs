@@ -35,7 +35,7 @@ public static class RuhUretici
         yeniRuh.yas = UnityEngine.Random.Range(25, 85);
         yeniRuh.meslek = meslekler[UnityEngine.Random.Range(0, meslekler.Count)];
         yeniRuh.olumTarihi = RastgeleTarih();
-        yeniRuh.eylemler = EylemUretici.RastgeleEylemlerUret(zorluk, adet);
+        yeniRuh.eylemler = EylemUretici.RastgeleEylemlerUretKarisik(zorluk, adet);
         return yeniRuh;
     }
 

@@ -35,38 +35,24 @@ public static class EylemUretici
         }}
     };
 
-    public static List<string> RastgeleEylemlerUret(string zorluk, int adet)
+    public static List<string> RastgeleEylemlerUretKarisik(string zorluk, int adet)
+{
+    List<string> tumEylemler = new List<string>();
+
+    if (iyiEylemler.ContainsKey(zorluk))
+        tumEylemler.AddRange(iyiEylemler[zorluk]);
+    if (kotuEylemler.ContainsKey(zorluk))
+        tumEylemler.AddRange(kotuEylemler[zorluk]);
+
+    List<string> secilen = new List<string>();
+    for (int i = 0; i < adet && tumEylemler.Count > 0; i++)
     {
-        List<string> eylemler = new List<string>();
-
-        var iyi = new List<string>(iyiEylemler[zorluk]);
-        var kotu = new List<string>(kotuEylemler[zorluk]);
-
-        int iyiSayisi = adet / 2 + 1;
-        int kotuSayisi = adet - iyiSayisi;
-
-        for (int i = 0; i < iyiSayisi && iyi.Count > 0; i++)
-        {
-            int index = Random.Range(0, iyi.Count);
-            eylemler.Add(iyi[index]);
-            iyi.RemoveAt(index);
-        }
-
-        for (int i = 0; i < kotuSayisi && kotu.Count > 0; i++)
-        {
-            int index = Random.Range(0, kotu.Count);
-            eylemler.Add(kotu[index]);
-            kotu.RemoveAt(index);
-        }
-
-        for (int i = 0; i < eylemler.Count; i++)
-        {
-            int randIndex = Random.Range(0, eylemler.Count);
-            var temp = eylemler[i];
-            eylemler[i] = eylemler[randIndex];
-            eylemler[randIndex] = temp;
-        }
-
-        return eylemler;
+        int index = UnityEngine.Random.Range(0, tumEylemler.Count);
+        secilen.Add(tumEylemler[index]);
+        tumEylemler.RemoveAt(index);
     }
+
+    return secilen;
+}
+
 }

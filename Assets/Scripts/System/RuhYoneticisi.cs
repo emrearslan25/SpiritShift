@@ -8,9 +8,10 @@ public class RuhYoneticisi : MonoBehaviour
     public static RuhYoneticisi Instance { get; private set; } // Singleton eklendi
 
     public RuhUIController uiController;
-    public DatabaseService db;
+    public GameOverController gameOverController;
     public int oyuncuID = 1;
 
+    public DatabaseService db;
     private Ruh aktifRuh;
     private Zamanlayici zamanlayici;
     private KararVerici kararVerici;
@@ -22,17 +23,27 @@ public class RuhYoneticisi : MonoBehaviour
         Instance = this; // Singleton ataması
 
         db = new DatabaseService("spiritshift.db");
+
+        // Her oyun başında yeni oyuncu oluştur
+        oyuncuID = UnityEngine.Random.Range(1000, 9999);
+        db.YeniOyuncuEkle(new Oyuncu { id = oyuncuID, ad = "Oyuncu" + oyuncuID });
+
         Evaluator.KurallariYukle(db);
 
         zamanlayici = new Zamanlayici();
         kararVerici = new KararVerici(db, oyuncuID);
 
+        uiController.PerformansiGoster(); // Başlangıçta sıfırdan göster
         YeniRuhYukle();
     }
 
     public void YeniRuhYukle()
     {
-        aktifRuh = RuhUretici.Uret("kolay", 5); // zorluk ve eylem sayısı parametreli
+        string zorluk = "kolay";
+        if (ruhSayaci >= 20) zorluk = "zor";
+        else if (ruhSayaci >= 10) zorluk = "orta";
+
+        aktifRuh = RuhUretici.Uret(zorluk, UnityEngine.Random.Range(5, 6)); // rastgele sayıda eylem (5)
 
         uiController.RuhBilgileriniGoster(
             aktifRuh.ad,
@@ -44,6 +55,7 @@ public class RuhYoneticisi : MonoBehaviour
 
         zamanlayici.Baslat();
         uiController.AktifButonlariAyarla(true);
+        uiController.PerformansiGoster();
     }
 
     public void KararVerildi(bool oyuncuCennetDedi)
@@ -72,14 +84,13 @@ public class RuhYoneticisi : MonoBehaviour
 
         db.PerformansKaydet(performans);
 
-        // Performans analizi
         if (!oyuncuDogruKararMi)
         {
             artArdaYanlisSayaci++;
             if (artArdaYanlisSayaci >= 2)
             {
                 Debug.LogError("[OYUN] Art arda 2 yanlış karar verildi. OYUN BİTTİ.");
-                // Buraya oyun bitişi UI/sahne geçişi vs. eklenebilir
+                gameOverController.OyunuBitir();
                 return;
             }
         }
@@ -88,12 +99,10 @@ public class RuhYoneticisi : MonoBehaviour
             artArdaYanlisSayaci = 0;
         }
 
-        // UI geri bildirim
         uiController.GeriBildirimVer(oyuncuDogruKararMi);
         uiController.AktifButonlariAyarla(false);
         uiController.PerformansiGoster();
 
-        // Sonraki ruh
         ruhSayaci++;
         StartCoroutine(BekleVeYenile());
     }

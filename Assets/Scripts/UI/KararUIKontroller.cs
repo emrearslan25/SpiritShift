@@ -34,4 +34,6 @@ public class KararUIController : MonoBehaviour
         cennetButton.interactable = false;
         cehennemButton.interactable = false;
     }
+
+    
 }

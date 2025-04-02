@@ -13,6 +13,7 @@ public class RuhUIController : MonoBehaviour
     public TMP_Text olumTarihiText;
     public Button cennetButton;
     public Button cehennemButton;
+    public Button acKapa;
 
     [Header("Eylem Paneli")]
     public List<TMP_Text> eylemTextList; // 7 adet text
