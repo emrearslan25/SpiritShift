@@ -12,7 +12,7 @@ public class KararVerici
         oyuncuID = aktifOyuncuID;
     }
 
-    public void KararVer(string eylemAciklama, bool oyuncuPozitifKarar, double kararSuresi)
+    public void KararVer(string eylemAciklama, bool oyuncuPozitifKarar, float kararSuresi)
     {
         bool dogruMu = Evaluator.KararDogruMu(eylemAciklama, oyuncuPozitifKarar);
 
