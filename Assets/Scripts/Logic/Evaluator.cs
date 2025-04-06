@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq; // <-- LINQ unutulmasın
 using UnityEngine;
 
 public static class Evaluator
@@ -13,25 +14,17 @@ public static class Evaluator
         Debug.Log($"[Evaluator] {guncelKurallar.Count} kural yüklendi.");
     }
 
-    public static bool EylemPozitifMi(string eylemAciklama)
+    public static bool EylemPozitifMi(string eylem)
     {
-        if (guncelKurallar == null || guncelKurallar.Count == 0)
+        var kural = guncelKurallar?.FirstOrDefault(k => k.kriter == eylem);
+        if (kural == null)
         {
-            Debug.LogWarning("[Evaluator] Kurallar yüklenmemiş. Varsayılan olarak tüm eylemler negatif sayılır.");
+            Debug.LogWarning("[Evaluator] Kurallar yüklenmemiş veya eşleşme yok. Varsayılan olarak tüm eylemler negatif sayılır.");
             return false;
         }
 
-        foreach (var kural in guncelKurallar)
-        {
-            if (eylemAciklama.ToLower().Contains(kural.kriter.ToLower()))
-            {
-                Debug.Log($"[Evaluator] Eylem eşleşti: '{eylemAciklama}' → Kriter: '{kural.kriter}' → Pozitif mi? {kural.pozitif}");
-                return kural.pozitif;
-            }
-        }
-
-        Debug.Log($"[Evaluator] Eylemde eşleşme bulunamadı: '{eylemAciklama}' → Varsayılan: false");
-        return false;
+        Debug.Log($"[Evaluator] Eylem eşleşti: '{eylem}' → Kriter: '{kural.kriter}' → Pozitif mi? {kural.PozitifMi}");
+        return kural.PozitifMi;
     }
 
     public static bool KararDogruMu(string eylemAciklama, bool oyuncuPozitifMi)
@@ -62,4 +55,4 @@ public static class Evaluator
         float oran = dogruSayisi / 5f;
         return oran < 0.4f; // %40 altıysa başarısız say
     }
-} 
+}

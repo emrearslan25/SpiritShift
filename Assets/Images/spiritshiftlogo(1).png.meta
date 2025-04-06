@@ -1,0 +1,1055 @@
+fileFormatVersion: 2
+guid: 930245ee8aa3b8cfa83e77494dc39c1c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8179328707611598936
+    second: spiritshiftlogo(1)_0
+  - first:
+      213: 2827320819538165926
+    second: spiritshiftlogo(1)_1
+  - first:
+      213: -1547852354524481165
+    second: spiritshiftlogo(1)_2
+  - first:
+      213: 6669046331985087112
+    second: spiritshiftlogo(1)_3
+  - first:
+      213: -7748736377911417775
+    second: spiritshiftlogo(1)_4
+  - first:
+      213: 6112395722845674789
+    second: spiritshiftlogo(1)_5
+  - first:
+      213: 4660956097504229111
+    second: spiritshiftlogo(1)_6
+  - first:
+      213: -978454298886959471
+    second: spiritshiftlogo(1)_7
+  - first:
+      213: 3594118318784979699
+    second: spiritshiftlogo(1)_8
+  - first:
+      213: 1822603332948103502
+    second: spiritshiftlogo(1)_9
+  - first:
+      213: 5219136249671542339
+    second: spiritshiftlogo(1)_10
+  - first:
+      213: -953835833157331716
+    second: spiritshiftlogo(1)_11
+  - first:
+      213: -1962973742072807843
+    second: spiritshiftlogo(1)_12
+  - first:
+      213: 3090829576514306143
+    second: spiritshiftlogo(1)_13
+  - first:
+      213: 6647209702602726625
+    second: spiritshiftlogo(1)_14
+  - first:
+      213: -3737353940066765463
+    second: spiritshiftlogo(1)_15
+  - first:
+      213: 3079480560961545760
+    second: spiritshiftlogo(1)_16
+  - first:
+      213: 4558634185870799188
+    second: spiritshiftlogo(1)_17
+  - first:
+      213: -4229391214720993685
+    second: spiritshiftlogo(1)_18
+  - first:
+      213: -9205697282723873667
+    second: spiritshiftlogo(1)_19
+  - first:
+      213: -6679479474596824898
+    second: spiritshiftlogo(1)_20
+  - first:
+      213: 2846312445378619625
+    second: spiritshiftlogo(1)_21
+  - first:
+      213: -8134718976553926373
+    second: spiritshiftlogo(1)_22
+  - first:
+      213: 2187910476391717422
+    second: spiritshiftlogo(1)_23
+  - first:
+      213: -1958008376346911167
+    second: spiritshiftlogo(1)_24
+  - first:
+      213: 6145590580702452767
+    second: spiritshiftlogo(1)_25
+  - first:
+      213: -6400124716755583007
+    second: spiritshiftlogo(1)_26
+  - first:
+      213: -7988538287452308039
+    second: spiritshiftlogo(1)_27
+  - first:
+      213: -4774581078980694819
+    second: spiritshiftlogo(1)_28
+  - first:
+      213: 5934828557792535618
+    second: spiritshiftlogo(1)_29
+  - first:
+      213: -9070630783856792660
+    second: spiritshiftlogo(1)_30
+  - first:
+      213: 9170608519728644389
+    second: spiritshiftlogo(1)_31
+  - first:
+      213: 4998021272501405943
+    second: spiritshiftlogo(1)_32
+  - first:
+      213: -6514927754880591136
+    second: spiritshiftlogo(1)_33
+  - first:
+      213: 7672440522716441656
+    second: spiritshiftlogo(1)_34
+  - first:
+      213: -1082683202030957555
+    second: spiritshiftlogo(1)_35
+  - first:
+      213: 4777197487620701911
+    second: spiritshiftlogo(1)_36
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: spiritshiftlogo(1)_0
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 698
+        width: 208
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8502856af10d28170800000000000000
+      internalID: 8179328707611598936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spiritshiftlogo(1)_1
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 884
+        width: 212
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a083aa3e49ac3720800000000000000
+      internalID: 2827320819538165926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spiritshiftlogo(1)_2
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 700
+        width: 203
+        height: 252
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 379f0d30c7ce48ae0800000000000000
+      internalID: -1547852354524481165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spiritshiftlogo(1)_3
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 623
+        width: 207
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88ac7980e463d8c50800000000000000
+      internalID: 6669046331985087112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spiritshiftlogo(1)_4
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 834
+        width: 27
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1546170a155f67490800000000000000
+      internalID: -7748736377911417775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spiritshiftlogo(1)_5
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 809
+        width: 112
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52d55da668793d450800000000000000
+      internalID: 6112395722845674789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spiritshiftlogo(1)_6
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 625
+        width: 204
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f63e6930ea0fa040800000000000000
+      internalID: 4660956097504229111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spiritshiftlogo(1)_7
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 618
+        width: 159
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19e83edcff4db62f0800000000000000
+      internalID: -978454298886959471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spiritshiftlogo(1)_8
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 580
+        width: 122
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f227e7819fd0e130800000000000000
+      internalID: 3594118318784979699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spiritshiftlogo(1)_9
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 607
+        width: 210
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4190d223103b4910800000000000000
+      internalID: 1822603332948103502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spiritshiftlogo(1)_10
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 721
+        width: 105
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 346690454c81e6840800000000000000
+      internalID: 5219136249671542339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spiritshiftlogo(1)_11
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 618
+        width: 159
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf45e960d5b43c2f0800000000000000
+      internalID: -953835833157331716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spiritshiftlogo(1)_12
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 581
+        width: 121
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5eb45828cd12c4e0800000000000000
+      internalID: -1962973742072807843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spiritshiftlogo(1)_13
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 541
+        width: 84
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f500869bf15d4ea20800000000000000
+      internalID: 3090829576514306143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spiritshiftlogo(1)_14
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 500
+        width: 136
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ec5a2f8102af3c50800000000000000
+      internalID: 6647209702602726625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spiritshiftlogo(1)_15
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 468
+        width: 104
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 965f9629460422cc0800000000000000
+      internalID: -3737353940066765463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spiritshiftlogo(1)_16
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 419
+        width: 30
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02665d021438cba20800000000000000
+      internalID: 3079480560961545760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spiritshiftlogo(1)_17
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 418
+        width: 29
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 451f7cda3a5834f30800000000000000
+      internalID: 4558634185870799188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spiritshiftlogo(1)_18
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 418
+        width: 30
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b66b566391f2e45c0800000000000000
+      internalID: -4229391214720993685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spiritshiftlogo(1)_19
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 418
+        width: 29
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7cf671681bce3080800000000000000
+      internalID: -9205697282723873667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spiritshiftlogo(1)_20
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 419
+        width: 29
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb8b428aec8bd43a0800000000000000
+      internalID: -6679479474596824898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spiritshiftlogo(1)_21
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 469
+        width: 101
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e8e092b612208720800000000000000
+      internalID: 2846312445378619625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spiritshiftlogo(1)_22
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 502
+        width: 134
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b11cfdeb03cab1f80800000000000000
+      internalID: -8134718976553926373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spiritshiftlogo(1)_23
+      rect:
+        serializedVersion: 2
+        x: 753
+        y: 541
+        width: 82
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2a1fa97cf40d5e10800000000000000
+      internalID: 2187910476391717422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spiritshiftlogo(1)_24
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 427
+        width: 27
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14e5a9471c1c3d4e0800000000000000
+      internalID: -1958008376346911167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spiritshiftlogo(1)_25
+      rect:
+        serializedVersion: 2
+        x: 746
+        y: 427
+        width: 27
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1c91c98216894550800000000000000
+      internalID: 6145590580702452767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spiritshiftlogo(1)_26
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 262
+        width: 100
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1eff59bba703e27a0800000000000000
+      internalID: -6400124716755583007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spiritshiftlogo(1)_27
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 265
+        width: 112
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bd3ccda0c2032190800000000000000
+      internalID: -7988538287452308039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spiritshiftlogo(1)_28
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 265
+        width: 52
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddced043ec74dbdb0800000000000000
+      internalID: -4774581078980694819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spiritshiftlogo(1)_29
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 265
+        width: 121
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2446116112fbc5250800000000000000
+      internalID: 5934828557792535618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spiritshiftlogo(1)_30
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 265
+        width: 53
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cab2e7f3c55ae1280800000000000000
+      internalID: -9070630783856792660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spiritshiftlogo(1)_31
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 265
+        width: 113
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 521c8985cdb844f70800000000000000
+      internalID: 9170608519728644389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spiritshiftlogo(1)_32
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 105
+        width: 99
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f8ca4fddd98c5540800000000000000
+      internalID: 4998021272501405943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spiritshiftlogo(1)_33
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 108
+        width: 135
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ea520979b35695a0800000000000000
+      internalID: -6514927754880591136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spiritshiftlogo(1)_34
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 108
+        width: 55
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83c63dc410cf97a60800000000000000
+      internalID: 7672440522716441656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spiritshiftlogo(1)_35
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 109
+        width: 96
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0c89a23d5989f0f0800000000000000
+      internalID: -1082683202030957555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spiritshiftlogo(1)_36
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 109
+        width: 112
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7de3587edc30c4240800000000000000
+      internalID: 4777197487620701911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
