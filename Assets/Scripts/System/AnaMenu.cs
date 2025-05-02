@@ -7,6 +7,7 @@ using System.Linq;
 public class AnaMenuController : MonoBehaviour
 {
     public GameObject istatistikPanel;
+    public GameObject isimInput;
     public GameObject menuButonlar;
     public IstatistikPanelKontroller panelKontrol;
     public TMP_InputField isimInputField;
@@ -17,6 +18,8 @@ public class AnaMenuController : MonoBehaviour
         menuButonlar.SetActive(false);
         istatistikPanel.SetActive(true);
         panelKontrol.TumIstatistikleriYukle();
+        isimInput.SetActive(false); // isim inputu gizle
+
     }
 
     public void OyunaBasla()
@@ -61,7 +64,11 @@ public class AnaMenuController : MonoBehaviour
 
 
     public void IstatistikKapat()
-    {
-        istatistikPanel.SetActive(false);
-    }
+{
+    istatistikPanel.SetActive(false);
+    menuButonlar.SetActive(true);
+    isimInput.SetActive(true);
+    
+}
+
 }
