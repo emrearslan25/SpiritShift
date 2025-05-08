@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: b38a481ceded6792ea40ac3d75f3e3fa
+guid: 2ad51959fa278c79c9d4120fb799fa0f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5040079984709767539
-    second: butoncikis_0
+      213: 1070485402444120457
+    second: butonskor_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,7 +113,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: butoncikis_0
+      name: butonskor_0
       rect:
         serializedVersion: 2
         x: 0
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3719e28ea06f1f540800000000000000
-      internalID: 5040079984709767539
+      spriteID: 9814ce54dc02bde00800000000000000
+      internalID: 1070485402444120457
       vertices: []
       indices: 
       edges: []

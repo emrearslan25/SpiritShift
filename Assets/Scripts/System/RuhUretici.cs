@@ -29,15 +29,17 @@ public static class RuhUretici
     };
 
     public static Ruh Uret(string zorluk, int adet)
-    {
-        Ruh yeniRuh = new Ruh();
-        yeniRuh.ad = isimler[UnityEngine.Random.Range(0, isimler.Count)];
-        yeniRuh.yas = UnityEngine.Random.Range(25, 85);
-        yeniRuh.meslek = meslekler[UnityEngine.Random.Range(0, meslekler.Count)];
-        yeniRuh.olumTarihi = RastgeleTarih();
-        yeniRuh.eylemler = EylemUretici.RastgeleEylemlerUretKarisik(zorluk, adet);
-        return yeniRuh;
-    }
+{
+    Ruh yeniRuh = new Ruh();
+    yeniRuh.ad = isimler[UnityEngine.Random.Range(0, isimler.Count)];
+    yeniRuh.yas = UnityEngine.Random.Range(25, 85);
+    yeniRuh.meslek = meslekler[UnityEngine.Random.Range(0, meslekler.Count)];
+    yeniRuh.olumTarihi = RastgeleTarih();
+    yeniRuh.zorluk = zorluk; // 👈 eksik olan bu
+    yeniRuh.eylemler = EylemUretici.RastgeleEylemlerUretKarisik(zorluk, adet);
+    return yeniRuh;
+}
+
 
     private static string RastgeleTarih()
     {

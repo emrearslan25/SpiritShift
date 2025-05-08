@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: b5b28b255a9df405cb9ce77b3aa56bd0
+guid: 4ee6d08807e15f09a9e43f5fb82e3fdc
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4265807839845820227
-    second: CehennemButon_0
+      213: 6550645588649786717
+    second: eylemlerbutton 1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: CehennemButon_0
+      name: eylemlerbutton 1_0
       rect:
         serializedVersion: 2
-        x: 309
-        y: 831
-        width: 462
-        height: 258
+        x: 0
+        y: 0
+        width: 984
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 347261e01a1333b30800000000000000
-      internalID: 4265807839845820227
+      spriteID: d5d33f0c47198ea50800000000000000
+      internalID: 6550645588649786717
       vertices: []
       indices: 
       edges: []
@@ -138,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      CehennemButon_0: 4265807839845820227
+      eylemlerbutton 1_0: 6550645588649786717
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

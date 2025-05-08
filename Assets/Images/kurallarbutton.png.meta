@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: bff9f1b48683004d2bdb8675f84f2f90
+guid: f9fca6e2cb2545612bf4ab974bd1f0b2
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4292009292900944209
-    second: butonskormenu_0
+      213: 441954746202108008
+    second: kurallarbutton 1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: butonskormenu_0
+      name: kurallarbutton 1_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 700
-        height: 120
+        width: 984
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fa6b6f3c948bf64c0800000000000000
-      internalID: -4292009292900944209
+      spriteID: 860bc260083222600800000000000000
+      internalID: 441954746202108008
       vertices: []
       indices: 
       edges: []
@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      kurallarbutton 1_0: 441954746202108008
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

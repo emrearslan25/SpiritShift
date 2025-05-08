@@ -38,9 +38,20 @@ public class RuhUIController : MonoBehaviour
         for (int i = 0; i < eylemTextList.Count; i++)
         {
             if (i < eylemler.Count)
-                eylemTextList[i].text = eylemler[i];
+            {
+                string eylem = eylemler[i];
+                eylemTextList[i].text = eylem;
+
+                if (Evaluator.EylemPozitifMi(eylem))
+                    eylemTextList[i].color = Color.green;
+                else
+                    eylemTextList[i].color = Color.red;
+            }
             else
+            {
                 eylemTextList[i].text = "";
+                eylemTextList[i].color = Color.white;
+            }
         }
 
         geriBildirimText.text = "";

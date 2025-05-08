@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 230429001ac7ff31781ac4f99a1e5835
+guid: 2477eb04263a9a373844a42f949ad052
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2201355643548122490
-    second: butonbasla_0
+      213: -4370479029538930079
+    second: "ak\u015Fam_0"
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: butonbasla_0
+      name: "ak\u015Fam_0"
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 700
-        height: 120
+        width: 1024
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 682430a94b63371e0800000000000000
-      internalID: -2201355643548122490
+      spriteID: 162c90a7a70f853c0800000000000000
+      internalID: -4370479029538930079
       vertices: []
       indices: 
       edges: []
@@ -138,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      "ak\u015Fam_0": -4370479029538930079
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

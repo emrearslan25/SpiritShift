@@ -1,26 +1,23 @@
-<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="/home/emre/SpiritShift/Assets/StreamingAssets/spiritshift.db" readonly="0" foreign_keys="1" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><main_tabs open="structure browser pragmas query" current="1"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="1079"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><current_table name="4,5:mainKural"/><default_encoding codec=""/><browse_table_settings><table schema="main" name="Kural" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="41"/><column index="2" value="42"/><column index="3" value="41"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="Oyuncu" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="41"/><column index="2" value="87"/><column index="3" value="95"/><column index="4" value="85"/><column index="5" value="45"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table></browse_table_settings></tab_browse><tab_sql><sql name="SQL 1">-- İyi eylemler (puan: 1)
-INSERT INTO Kural (kriter, puan) VALUES
-('Kan bağışında bulundu', 1),
-('Çevre temizliğine katıldı', 1),
-('Kütüphaneye kitap bağışladı', 1),
-('Yaşlılara yemek dağıttı', 1),
-('Hayvan barınağında gönüllü çalıştı', 1),
-('Hasta çocuğu hastaneye götürdü', 1),
-('Gönüllü olarak okul boyadı', 1),
-('Ağaç dikim kampanyasına katıldı', 1),
-('Mahallede sağlık taraması yaptı', 1),
-('Engelli komşusuna yardım etti', 1);
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="/home/emre/SpiritShift/Assets/StreamingAssets/spiritshift.db" readonly="0" foreign_keys="1" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><main_tabs open="browser structure pragmas query" current="0"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="1079"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><current_table name="4,5:mainKural"/><default_encoding codec=""/><browse_table_settings><table schema="main" name="Kural" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="41"/><column index="2" value="231"/><column index="3" value="41"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table></browse_table_settings></tab_browse><tab_sql><sql name="SQL 1">UPDATE Kural SET anahtar_kelime = 'kan', anlam = 'Kan vermek' WHERE id = 1;
+UPDATE Kural SET anahtar_kelime = 'temizlik', anlam = 'Çevre temizliği' WHERE id = 2;
+UPDATE Kural SET anahtar_kelime = 'kitap', anlam = 'Kitap bağışı' WHERE id = 3;
+UPDATE Kural SET anahtar_kelime = 'yaşlı', anlam = 'Yaşlılara yardım' WHERE id = 4;
+UPDATE Kural SET anahtar_kelime = 'barınak', anlam = 'Hayvan barınağına destek' WHERE id = 5;
+UPDATE Kural SET anahtar_kelime = 'hastane', anlam = 'Hastaneye götürme' WHERE id = 6;
+UPDATE Kural SET anahtar_kelime = 'gönüllü', anlam = 'Gönüllü çalışma' WHERE id = 7;
+UPDATE Kural SET anahtar_kelime = 'ağaç', anlam = 'Ağaç dikimi' WHERE id = 8;
+UPDATE Kural SET anahtar_kelime = 'sağlık', anlam = 'Sağlık taraması' WHERE id = 9;
+UPDATE Kural SET anahtar_kelime = 'engelli', anlam = 'Engellilere yardım' WHERE id = 10;
 
--- Kötü eylemler (puan: 0)
-INSERT INTO Kural (kriter, puan) VALUES
-('Rüşvet aldı', 0),
-('Sahte belge düzenledi', 0),
-('Dolandırıcılık yaptı', 0),
-('Sigara yasağını ihlal etti', 0),
-('Uyuşturucu sattı', 0),
-('Vergi kaçırdı', 0),
-('Hırsızlık yaptı', 0),
-('Kamu malına zarar verdi', 0),
-('Trafikte alkollü yakalandı', 0),
-('Sosyal medyada nefret söylemi yaydı', 0);
+-- Negatifler
+UPDATE Kural SET anahtar_kelime = 'rüşvet', anlam = 'Rüşvet almak' WHERE id = 11;
+UPDATE Kural SET anahtar_kelime = 'belge', anlam = 'Sahte belge' WHERE id = 12;
+UPDATE Kural SET anahtar_kelime = 'dolandırıcılık', anlam = 'Dolandırıcılık' WHERE id = 13;
+UPDATE Kural SET anahtar_kelime = 'sigara', anlam = 'Sigara yasağını ihlal' WHERE id = 14;
+UPDATE Kural SET anahtar_kelime = 'uyuşturucu', anlam = 'Uyuşturucu kullanımı' WHERE id = 15;
+UPDATE Kural SET anahtar_kelime = 'vergi', anlam = 'Vergi kaçırmak' WHERE id = 16;
+UPDATE Kural SET anahtar_kelime = 'hırsızlık', anlam = 'Hırsızlık' WHERE id = 17;
+UPDATE Kural SET anahtar_kelime = 'kamu', anlam = 'Kamu malına zarar' WHERE id = 18;
+UPDATE Kural SET anahtar_kelime = 'alkollü', anlam = 'Alkol kullanmak' WHERE id = 19;
+UPDATE Kural SET anahtar_kelime = 'nefret', anlam = 'Nefret söylemi' WHERE id = 20;
 </sql><current_tab id="0"/></tab_sql></sqlb_project>

@@ -11,6 +11,8 @@ public class AnaMenuController : MonoBehaviour
     public GameObject menuButonlar;
     public IstatistikPanelKontroller panelKontrol;
     public TMP_InputField isimInputField;
+    public GameObject kurallarPanel;
+    public KurallarPanelKontroller kurallarKontrol;
     
 
     public void IstatistikleriGoster()
@@ -69,6 +71,21 @@ public class AnaMenuController : MonoBehaviour
     menuButonlar.SetActive(true);
     isimInput.SetActive(true);
     
+}
+
+public void KurallariGoster()
+{
+    kurallarPanel.SetActive(true);
+    kurallarKontrol.KurallariYukle();
+    menuButonlar.SetActive(false);
+    isimInput.SetActive(false);
+}
+
+public void KurallariKapat()
+{
+    kurallarPanel.SetActive(false);
+    menuButonlar.SetActive(true);
+    isimInput.SetActive(true);
 }
 
 }
